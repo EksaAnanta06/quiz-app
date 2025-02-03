@@ -363,7 +363,7 @@ function mulaiQuiz(objSoal) {
         tampilkanJawaban(0); // Tampilkan jawaban untuk soal pertama setelah quiz selesai
       }
     }
-  }, 11000); // Sesuaikan dengan durasi timer (dalam milidetik)
+  }, 10000); // Sesuaikan dengan durasi timer (dalam milidetik)
 }
 
 // untuk mengatur waktu
