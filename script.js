@@ -373,7 +373,7 @@ function batasWaktu(timer) {
     if (timer == 0) {
       timerText.innerHTML = timer;
       clearInterval(interval);
-      countSoal++;
+      
       if (countSoal < kumpulanSoal.length) {
         mulaiQuiz(kumpulanSoal[countSoal]);
       } else {
