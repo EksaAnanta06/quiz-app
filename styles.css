@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-quiz {
+  width: 60%;
+  height: max-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: min-content;
+  background-color: rgb(45, 41, 41);
+  color: white;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.judul {
+  color: rgb(193, 193, 193);
+}
+
+#score {
+  color: greenyellow;
+  animation-name: scale;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: 15px;
+}
+
+#timer {
+  color: rgb(255, 98, 0);
+}
+
+/* animasi */
+@keyframes scale {
+ 
+}
+
+.timer-score {
+  display: flex;
+  gap: 30px;
+  margin-top: 5px;
+  font-family: monospace;
+}
+
+#timer-bar {
+  height: 5px;
+  background-color: red;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+  transition: all 1s linear;
+}
+
+.quiz-box {
+  width: 100%;
+  height: 75%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+input {
+  cursor: pointer;
+}
+
+.pilihan {
+  cursor: pointer;
+}
+
+.nomer-text {
+  display: block;
+  font-family: monospace;
+}
+
+#btn {
+  display: inline-block;
+  width: 30%;
+  padding: 5px;
+  font-family: sans-serif;
+  border: none;
+  background: rgb(255, 0, 0);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(196, 0, 0);
+}
+
+.btn-quiz-selesai {
+  gap: 20px;
+  transform: translateY(-50px);
+  display: none;
+}
+
+.btn-selesai {
+  padding: 10px;
+  font-family: monospace;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-size: 1.3em;
+}
+
+.btn-selesai:hover {
+  background-color: rgb(196, 0, 0);
+}
+
+.btn-selesai:disabled {
+  background-color: rgb(196, 0, 0);
+}
+
+.hasil {
+  font-size: 1em;
+  margin-top: 7px;
+  font-family: monospace;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-quiz {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    background-color: black;
+    color: white !important;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: min-content;
+    background-color: rgb(45, 41, 41);
+    color: white;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .timer-score {
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+    font-family: monospace;
+    font-size: 1.3em;
+  }
+
+  .quiz-box {
+    width: 100%;
+    height: 75%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+
+  .hasil {
+    font-size: 0.7em;
+    margin-top: 7px;
+    font-family: monospace;
+  }
+}
+
+
